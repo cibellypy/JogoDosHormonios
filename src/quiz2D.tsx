@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { TRILHAS, Pergunta, mensagemFinal, preparar } from './perguntas';
 import { styles } from './styles';
+import PlantaCrescendo from './PlantaCrescendo';
 
 export default function Quiz2D({ onSair }: { onSair: () => void }) {
   const [indice, setIndice] = useState(0);
@@ -39,6 +40,7 @@ export default function Quiz2D({ onSair }: { onSair: () => void }) {
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.content}>
+          <PlantaCrescendo acertos={acertos} total={TRILHAS.length} />
           <Text style={styles.titulo}>🌿 Fim da jornada!</Text>
           <Text style={styles.placar}>
             {acertos} / {TRILHAS.length}
@@ -58,6 +60,8 @@ export default function Quiz2D({ onSair }: { onSair: () => void }) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.quizConteudo}>
+        <PlantaCrescendo acertos={acertos} total={TRILHAS.length} />
+
         <Text style={styles.status}>
           Pergunta {indice + 1} de {TRILHAS.length}  |  Acertos: {acertos}
         </Text>

@@ -4,7 +4,7 @@ export const ROTACAO_CEU_Y = -90; // gira a imagem 360 (mude se a "frente" ficar
 export const TEMPO_FUSE_MS = 2500; // tempo olhando para o card para "clicar"
 export const TEMPO_EXPLICACAO_MS = 4500; // tempo lendo a explicação após acertar
 export const PERGUNTAS_POR_PORTAL = 3; // a cada 3 acertos aparece um portal
-export const REMOVER_ACENTOS_3D = false; // se os acentos não aparecerem no VR, mude para true
+export const REMOVER_ACENTOS_3D = true; // se os acentos não aparecerem no VR, mude para true
 
 // Sensores: intervalo entre leituras (ms). 16 = ~60 Hz, 25 = ~40 Hz, 33 = ~30 Hz.
 // Agora os dados vão por injectJavaScript (sem JSON), então 25 é um bom começo.
