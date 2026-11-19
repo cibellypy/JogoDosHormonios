@@ -1,0 +1,33 @@
+{
+  "name": "jogodoshormonios",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@react-navigation/native": "^7.4.1",
+    "@react-navigation/stack": "^7.11.1",
+    "dotenv": "^17.4.2",
+    "expo": "^58.0.26",
+    "expo-asset": "~58.0.21",
+    "expo-screen-orientation": "~58.0.4",
+    "expo-sensors": "~58.0.5",
+    "expo-status-bar": "~58.0.5",
+    "lucide-react-native": "^1.46.0",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-webview": "14.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "private": true
+}
